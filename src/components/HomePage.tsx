@@ -1,5 +1,4 @@
 import React from 'react';
-import { Truck, Package, Users, Star, CheckCircle, ArrowRight, Shield, Clock, Award, Phone, Mail, MapPin } from 'lucide-react';
 
 interface HomePageProps {
   onLogin: () => void;
@@ -20,7 +19,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center text-white">
             <div className="inline-flex items-center bg-yellow-400/20 backdrop-blur-sm text-yellow-300 px-6 py-3 rounded-full text-sm font-medium mb-8">
-              <Star className="w-4 h-4 mr-2 fill-current" />
+              ⭐
               Sri Lanka's Leading Heavy Vehicle & Material Platform
             </div>
             
@@ -40,7 +39,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                 className="group bg-yellow-400 text-black px-10 py-4 rounded-xl text-lg font-bold hover:bg-yellow-500 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center"
               >
                 Sign Up Now
-                <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <span className="ml-3 group-hover:translate-x-1 transition-transform">→</span>
               </button>
             </div>
             
@@ -83,7 +82,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
             <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-yellow-200">
               <div className="text-center">
                 <div className="bg-yellow-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Truck className="text-yellow-600 w-8 h-8" />
+                  <span className="text-yellow-600 text-2xl">🚚</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Heavy Vehicle Rental</h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
@@ -91,7 +90,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                 </p>
                 <div className="flex items-center text-yellow-600 font-semibold group-hover:text-yellow-700">
                   Find Vehicles
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  <span className="ml-2 group-hover:translate-x-2 transition-transform">→</span>
                 </div>
               </div>
             </div>
@@ -99,7 +98,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
             <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-blue-200">
               <div className="text-center">
                 <div className="bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Package className="text-blue-600 w-8 h-8" />
+                  <span className="text-blue-600 text-2xl">📦</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Material Supply</h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
@@ -107,7 +106,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                 </p>
                 <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700">
                   Find Materials
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  <span className="ml-2 group-hover:translate-x-2 transition-transform">→</span>
                 </div>
               </div>
             </div>
@@ -115,7 +114,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
             <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-green-200">
               <div className="text-center">
                 <div className="bg-green-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Users className="text-green-600 w-8 h-8" />
+                  <span className="text-green-600 text-2xl">🔍</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Direct Connection</h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
@@ -123,7 +122,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                 </p>
                 <div className="flex items-center text-green-600 font-semibold group-hover:text-green-700">
                   Get Connected
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  <span className="ml-2 group-hover:translate-x-2 transition-transform">→</span>
                 </div>
               </div>
             </div>
@@ -148,7 +147,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-blue-100 p-3 rounded-xl mr-4 mt-1">
-                    <Shield className="text-blue-600 w-6 h-6" />
+                    <span className="text-blue-600 text-xl">🛡️</span>
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2">Verified Providers</h4>
@@ -158,7 +157,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                 
                 <div className="flex items-start">
                   <div className="bg-yellow-100 p-3 rounded-xl mr-4 mt-1">
-                    <Clock className="text-yellow-600 w-6 h-6" />
+                    <span className="text-yellow-600 text-xl">🕒</span>
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2">24/7 Support</h4>
@@ -168,7 +167,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                 
                 <div className="flex items-start">
                   <div className="bg-green-100 p-3 rounded-xl mr-4 mt-1">
-                    <Award className="text-green-600 w-6 h-6" />
+                    <span className="text-green-600 text-xl">🏆</span>
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2">Island-wide Coverage</h4>
@@ -189,7 +188,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
               <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-lg">
                 <div className="flex items-center space-x-4">
                   <div className="bg-yellow-400 p-3 rounded-xl">
-                    <Star className="text-white w-6 h-6 fill-current" />
+                    <span className="text-white text-xl">⭐</span>
                   </div>
                   <div>
                     <div className="font-bold text-gray-900 text-lg">4.9/5 Rating</div>
@@ -219,7 +218,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
             <div className="group bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border border-blue-200 hover:shadow-2xl transition-all duration-500">
               <div className="text-center">
                 <div className="bg-blue-500 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Users className="text-white w-10 h-10" />
+                  <span className="text-white text-3xl">👥</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Service Consumers</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -228,19 +227,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                 
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     Rent heavy vehicles with operators
                   </div>
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     Source quality construction materials
                   </div>
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     Direct contact with suppliers
                   </div>
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     Competitive pricing
                   </div>
                 </div>
@@ -255,7 +254,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
             <div className="group bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-3xl p-8 border border-yellow-200 hover:shadow-2xl transition-all duration-500">
               <div className="text-center">
                 <div className="bg-yellow-500 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Truck className="text-white w-10 h-10" />
+                  <span className="text-white text-3xl">🚚</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Vehicle Owners</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -264,19 +263,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                 
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     List your vehicles for rent
                   </div>
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     Set your own rates
                   </div>
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     Reach verified customers
                   </div>
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     Insurance support
                   </div>
                 </div>
@@ -291,7 +290,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
             <div className="group bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 border border-green-200 hover:shadow-2xl transition-all duration-500">
               <div className="text-center">
                 <div className="bg-green-500 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Package className="text-white w-10 h-10" />
+                  <span className="text-white text-3xl">📦</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Material Suppliers</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -300,19 +299,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                 
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     List your materials
                   </div>
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     Expand customer base
                   </div>
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     Quality certification
                   </div>
                   <div className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <span className="text-green-500 mr-3">✓</span>
                     Delivery coordination
                   </div>
                 </div>

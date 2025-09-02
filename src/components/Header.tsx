@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Menu, X, User, LogOut, Home, Truck, Package, Info, Phone, UserPlus, Settings, Wrench } from 'lucide-react';
 import { User as UserType } from '../types';
 
 type ViewType = 'home' | 'vehicles' | 'materials' | 'about' | 'contact' | 'signup' | 'dashboard' | 'profile' | 'confirmation' | 'services' | 'vehicle-listing' | 'material-listing' | 'vehicle-details' | 'vehicle-management' | 'material-management';
@@ -37,51 +36,51 @@ export const Header: React.FC<HeaderProps> = ({
       switch (user.role) {
         case 'consumer':
           return [
-            { id: 'home', label: 'Home', icon: Home },
-            { id: 'vehicles', label: 'Vehicles', icon: Truck },
-            { id: 'materials', label: 'Materials', icon: Package },
-            { id: 'about', label: 'About', icon: Info },
-            { id: 'contact', label: 'Contact', icon: Phone }
+            { id: 'home', label: 'Home' },
+            { id: 'vehicles', label: 'Vehicles' },
+            { id: 'materials', label: 'Materials' },
+            { id: 'about', label: 'About' },
+            { id: 'contact', label: 'Contact' }
           ];
         case 'vehicle_owner':
           return [
-            { id: 'dashboard', label: 'Dashboard', icon: Home },
-            { id: 'vehicle-management', label: 'Vehicle Management', icon: Wrench },
-            { id: 'about', label: 'About', icon: Info },
-            { id: 'contact', label: 'Contact', icon: Phone }
+            { id: 'dashboard', label: 'Dashboard' },
+            { id: 'vehicle-management', label: 'Vehicle Management' },
+            { id: 'about', label: 'About' },
+            { id: 'contact', label: 'Contact' }
           ];
         case 'material_supplier':
           return [
-            { id: 'dashboard', label: 'Dashboard', icon: Home },
-            { id: 'material-management', label: 'Material Management', icon: Settings },
-            { id: 'about', label: 'About', icon: Info },
-            { id: 'contact', label: 'Contact', icon: Phone }
+            { id: 'dashboard', label: 'Dashboard' },
+            { id: 'material-management', label: 'Material Management' },
+            { id: 'about', label: 'About' },
+            { id: 'contact', label: 'Contact' }
           ];
         case 'admin':
           return [
-            { id: 'dashboard', label: 'Admin Dashboard', icon: Home },
-            { id: 'vehicles', label: 'Vehicles', icon: Truck },
-            { id: 'materials', label: 'Materials', icon: Package },
-            { id: 'about', label: 'About', icon: Info },
-            { id: 'contact', label: 'Contact', icon: Phone }
+            { id: 'dashboard', label: 'Admin Dashboard' },
+            { id: 'vehicles', label: 'Vehicles' },
+            { id: 'materials', label: 'Materials' },
+            { id: 'about', label: 'About' },
+            { id: 'contact', label: 'Contact' }
           ];
         default:
           return [
-            { id: 'home', label: 'Home', icon: Home },
-            { id: 'vehicles', label: 'Vehicles', icon: Truck },
-            { id: 'materials', label: 'Materials', icon: Package },
-            { id: 'about', label: 'About', icon: Info },
-            { id: 'contact', label: 'Contact', icon: Phone }
+            { id: 'home', label: 'Home' },
+            { id: 'vehicles', label: 'Vehicles' },
+            { id: 'materials', label: 'Materials' },
+            { id: 'about', label: 'About' },
+            { id: 'contact', label: 'Contact' }
           ];
       }
     } else {
       // Guest navigation
       return [
-        { id: 'home', label: 'Home', icon: Home },
-        { id: 'vehicles', label: 'Vehicles', icon: Truck },
-        { id: 'materials', label: 'Materials', icon: Package },
-        { id: 'about', label: 'About', icon: Info },
-        { id: 'contact', label: 'Contact', icon: Phone }
+        { id: 'home', label: 'Home' },
+        { id: 'vehicles', label: 'Vehicles' },
+        { id: 'materials', label: 'Materials' },
+        { id: 'about', label: 'About' },
+        { id: 'contact', label: 'Contact' }
       ];
     }
   };
@@ -130,7 +129,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="flex items-center space-x-3 cursor-pointer group"
           >
             <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 p-3 rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300">
-              <Truck className="w-8 h-8 text-white" />
+              <span className="text-white text-2xl font-bold">A</span>
             </div>
             <div>
               <h1 className="text-2xl font-bold text-gray-900 group-hover:text-yellow-600 transition-colors">
@@ -152,7 +151,6 @@ export const Header: React.FC<HeaderProps> = ({
                     : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
                 }`}
               >
-                <item.icon size={18} />
                 <span>{item.label}</span>
               </button>
             ))}
@@ -174,7 +172,7 @@ export const Header: React.FC<HeaderProps> = ({
                         className="w-full h-full rounded-full object-cover"
                       />
                     ) : (
-                      <User size={16} className="text-yellow-600" />
+                      <span className="text-yellow-600 text-sm font-bold">U</span>
                     )}
                   </div>
                   <div className="text-left hidden sm:block">
@@ -196,7 +194,7 @@ export const Header: React.FC<HeaderProps> = ({
                               className="w-full h-full rounded-full object-cover"
                             />
                           ) : (
-                            <User size={20} className="text-white" />
+                            <span className="text-white text-lg font-bold">U</span>
                           )}
                         </div>
                         <div>
@@ -214,7 +212,6 @@ export const Header: React.FC<HeaderProps> = ({
                         }}
                         className="w-full flex items-center space-x-3 text-left px-4 py-3 hover:bg-gray-50 rounded-xl transition-colors"
                       >
-                        <User size={18} className="text-gray-500" />
                         <span className="text-gray-700">View Profile</span>
                       </button>
                       
@@ -225,7 +222,6 @@ export const Header: React.FC<HeaderProps> = ({
                         }}
                         className="w-full flex items-center space-x-3 text-left px-4 py-3 hover:bg-red-50 rounded-xl transition-colors text-red-600"
                       >
-                        <LogOut size={18} />
                         <span>Sign Out</span>
                       </button>
                     </div>
@@ -244,7 +240,6 @@ export const Header: React.FC<HeaderProps> = ({
                   onClick={onShowSignUp}
                   className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-6 py-3 rounded-xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl flex items-center space-x-2"
                 >
-                  <UserPlus size={18} />
                   <span>Sign Up</span>
                 </button>
               </div>
@@ -255,7 +250,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={onMenuClick}
               className="lg:hidden p-2 rounded-lg text-gray-600 hover:text-yellow-600 hover:bg-yellow-50 transition-all duration-300"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? '✕' : '☰'}
             </button>
           </div>
         </div>
@@ -277,7 +272,6 @@ export const Header: React.FC<HeaderProps> = ({
                       : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
                   }`}
                 >
-                  <item.icon size={20} />
                   <span>{item.label}</span>
                 </button>
               ))}
@@ -300,7 +294,6 @@ export const Header: React.FC<HeaderProps> = ({
                     }}
                     className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-4 py-3 rounded-xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 font-semibold flex items-center space-x-2"
                   >
-                    <UserPlus size={18} />
                     <span>Sign Up</span>
                   </button>
                 </div>
