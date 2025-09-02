@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { X, Mail, Lock, User as UserIcon, Phone, Eye, EyeOff } from 'lucide-react';
 import { User } from '../types';
 
 interface AuthModalProps {
@@ -101,7 +100,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
           onClick={onClose}
           className="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors"
         >
-          <X size={24} />
+          ✕
         </button>
 
         <div className="text-center mb-8">
@@ -130,7 +129,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
         <form onSubmit={handleSubmit} className="space-y-6">
           {isSignUp && (
             <div className="relative">
-              <UserIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+              <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">👤</span>
               <input
                 type="text"
                 name="name"
@@ -144,7 +143,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
           )}
 
           <div className="relative">
-            <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+            <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📧</span>
             <input
               type="email"
               name="email"
@@ -158,7 +157,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
 
           {isSignUp && (
             <div className="relative">
-              <Phone className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+              <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">📞</span>
               <input
                 type="tel"
                 name="phone"
@@ -172,7 +171,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
           )}
 
           <div className="relative">
-            <Lock className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+            <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">🔒</span>
             <input
               type={showPassword ? 'text' : 'password'}
               name="password"
@@ -187,7 +186,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
               onClick={() => setShowPassword(!showPassword)}
               className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
             >
-              {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+              {showPassword ? '🙈' : '👁️'}
             </button>
           </div>
 

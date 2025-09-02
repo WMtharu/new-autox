@@ -1,5 +1,4 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, Star, Award, Users, Truck } from 'lucide-react';
 
 type ViewType = 'home' | 'vehicles' | 'materials' | 'about' | 'contact' | 'signup';
 
@@ -16,28 +15,28 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="space-y-3">
               <div className="bg-orange-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto">
-                <Users className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">👥</span>
               </div>
               <div className="text-3xl font-bold text-white">500+</div>
               <div className="text-gray-300">Happy Customers</div>
             </div>
             <div className="space-y-3">
               <div className="bg-blue-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto">
-                <Truck className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">🚚</span>
               </div>
               <div className="text-3xl font-bold text-white">1000+</div>
               <div className="text-gray-300">Successful Deliveries</div>
             </div>
             <div className="space-y-3">
               <div className="bg-green-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto">
-                <Star className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">⭐</span>
               </div>
               <div className="text-3xl font-bold text-white">4.9/5</div>
               <div className="text-gray-300">Customer Rating</div>
             </div>
             <div className="space-y-3">
               <div className="bg-purple-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto">
-                <Award className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">🏆</span>
               </div>
               <div className="text-3xl font-bold text-white">5+</div>
               <div className="text-gray-300">Years Experience</div>
@@ -54,7 +53,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 p-3 rounded-xl shadow-lg">
-                  <Truck className="w-8 h-8 text-white" />
+                  <span className="text-white text-2xl">🚚</span>
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white">Auto X</h3>
@@ -139,7 +138,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <div className="space-y-4 text-gray-300">
                 <div className="flex items-start">
                   <div className="bg-yellow-400 p-2 rounded-lg mr-4 mt-1">
-                    <Phone size={16} className="text-white" />
+                    <span className="text-white text-sm">📞</span>
                   </div>
                   <div>
                     <div className="font-semibold text-white">Call Us</div>
@@ -149,7 +148,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </div>
                 <div className="flex items-start">
                   <div className="bg-yellow-400 p-2 rounded-lg mr-4 mt-1">
-                    <Mail size={16} className="text-white" />
+                    <span className="text-white text-sm">📧</span>
                   </div>
                   <div>
                     <div className="font-semibold text-white">Email Us</div>
@@ -159,7 +158,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </div>
                 <div className="flex items-start">
                   <div className="bg-yellow-400 p-2 rounded-lg mr-4 mt-1">
-                    <MapPin size={16} className="text-white" />
+                    <span className="text-white text-sm">📍</span>
                   </div>
                   <div>
                     <div className="font-semibold text-white">Visit Us</div>
@@ -169,7 +168,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </div>
                 <div className="flex items-start">
                   <div className="bg-yellow-400 p-2 rounded-lg mr-4 mt-1">
-                    <Clock size={16} className="text-white" />
+                    <span className="text-white text-sm">🕒</span>
                   </div>
                   <div>
                     <div className="font-semibold text-white">Working Hours</div>
