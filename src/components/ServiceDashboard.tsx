@@ -160,7 +160,7 @@ export const ServiceDashboard: React.FC<ServiceDashboardProps> = ({
                   <span className="text-white text-4xl">🚚</span>
                 </div>
                 <h3 className="text-4xl font-bold text-gray-900 mb-4">
-                  🚚 {user.role === 'consumer' ? 'Service Vehicles' : user.role === 'vehicle_owner' ? 'Manage Vehicles' : 'Browse Vehicles'}
+                  {user.role === 'consumer' ? 'Service Vehicles' : user.role === 'vehicle_owner' ? 'Manage Vehicles' : 'Browse Vehicles'}
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   {user.role === 'consumer' 
@@ -213,7 +213,7 @@ export const ServiceDashboard: React.FC<ServiceDashboardProps> = ({
                   <span className="text-white text-4xl">📦</span>
                 </div>
                 <h3 className="text-4xl font-bold text-gray-900 mb-4">
-                  🧱 {user.role === 'consumer' ? 'Construction Materials' : user.role === 'material_supplier' ? 'Manage Materials' : 'Browse Materials'}
+                  {user.role === 'consumer' ? 'Construction Materials' : user.role === 'material_supplier' ? 'Manage Materials' : 'Browse Materials'}
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   {user.role === 'consumer' 

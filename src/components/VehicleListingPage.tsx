@@ -37,7 +37,7 @@ export const VehicleListingPage: React.FC<VehicleListingPageProps> = ({ onBack, 
 
           <div className="text-center text-black">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-              🚚 Service Vehicles
+              Service Vehicles
             </h1>
             <p className="text-xl max-w-3xl mx-auto mb-8">
               Browse construction vehicles and heavy machinery from verified owners across Sri Lanka.

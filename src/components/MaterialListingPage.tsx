@@ -381,7 +381,7 @@ export const MaterialListingPage: React.FC<MaterialListingPageProps> = ({ onBack
 
           <div className="text-center text-white">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-              🧱 Construction Materials
+              Construction Materials
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
               Source quality construction materials from verified suppliers across Sri Lanka.
